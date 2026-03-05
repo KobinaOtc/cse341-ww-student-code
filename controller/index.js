@@ -1,5 +1,7 @@
+const path = require('path');
+
 const homeRoute = (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(path.join(__dirname, '../frontend/index.html'));
 }
 
 module.exports = {
